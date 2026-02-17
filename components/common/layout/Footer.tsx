@@ -177,7 +177,14 @@ const Footer: React.FC<FooterProps> = ({
 
           <div className="text-center text-white text-base font-normal">
             Copyright © {new Date().getFullYear()} All Rights Reserved |{" "}
-            Rechelist Pharma
+            Rechelist Pharma | <a
+              href="https://www.growchip.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-300 transition-colors"
+            >
+              Website Developed By Growchip
+            </a>
           </div>
         </div>
       </Wrapper>

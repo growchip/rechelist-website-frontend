@@ -11,6 +11,7 @@ import {
 } from "@/apis/get-apis";
 import { SidebarProvider } from "@/hooks/useSidebarMob";
 import { ModalProvider } from "@/hooks/useModalContext";
+import FloatingCTA from "@/components/common/layout/FloatingCTA";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -55,6 +56,7 @@ export default async function RootLayout({
                 range={productsRange}
               />
               <div className="flex-1">{children}</div>
+              <FloatingCTA />
               <Footer
                 socialLinks={navItems.menus[1]}
                 quickLinks={navItems.menus[2]}
