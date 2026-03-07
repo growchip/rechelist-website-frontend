@@ -38,6 +38,25 @@ export default async function RootLayout({
       getRange(),
     ]);
 
+    const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Rechelist Pharma",
+    "url": "https://rechelistpharma.com/",
+    "logo": "https://rechelistpharma.com/assets/images/logo.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8288037775",
+      "contactType": "customer support",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Hindi"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/p/RechElist-Pharma-Pvt-Ltd-61573188486461/",
+      "https://www.instagram.com/rechelist_12?igsh=MWpia2VtcTc3dGFuMA=="
+    ]
+  }
+
   return (
     <html lang="en">
       <head>
